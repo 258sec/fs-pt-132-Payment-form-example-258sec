@@ -17,11 +17,11 @@
   </head>
 
   <body>
-    <main class="container-fluid p-5">
+    <main class="container p-3 p-md-5">
       <!-------Card---------->
       <div class="card text-center">
         <!--------------Header------------->
-        <header class="card-header bg-warning bg-opacity-25 d-flex"><h1>Payment form example</h1></header>
+        <header class="card-header bg-warning bg-opacity-25 "><h1>Payment form example</h1></header>
         <form> 
         <div class="card-body">
           <div class="row g-3">
@@ -52,7 +52,7 @@
             </div>
 
             <!-------- CVC---------->
-            <div class="col-6 col-md-3 d-flex flex-column text-start">
+            <div class="col-12 col-md-3 d-flex flex-column text-start">
               <label for="cvc"  class="form-label"><strong>CVC #</strong></label>
               <input
                 type="text"
@@ -67,7 +67,7 @@
             </div>
 
             <!-------- Amount---------->
-            <div class="col-6 col-md-4  d-flex flex-column text-start">
+            <div class="col-12 col-md-4  d-flex flex-column text-start">
               <label for="amount" class="form-label"
                 ><strong>Amount $</strong></label
               >
@@ -83,7 +83,7 @@
             </div>
               
             <!-------- First Name---------->
-            <div class="col-6 col-md-6  d-flex flex-column text-start">
+            <div class="col-12 col-md-6  d-flex flex-column text-start">
               <label for="FirstName" class="form-label "
                 ><strong> First Name</strong></label
               >
@@ -91,7 +91,7 @@
             </div>
 
             <!-------- Last Name---------->
-            <div class="col-6 col-md-6  d-flex flex-column text-start">
+            <div class="col-12 col-md-6  d-flex flex-column text-start">
               <label for="LastName" class="form-label"
                 ><strong> Last Name</strong></label
               >
@@ -99,11 +99,11 @@
             </div>
 
             <!-------- City select--------------------->
-            <div class="col-6 col-md-6  d-flex flex-column text-start">
+            <div class="col-12 col-md-6  d-flex flex-column text-start">
               <label for="city" class="form-label"><strong>City</strong></label>
               <input id="city" type="text" pattern="[a-zA-Z]+" required class="form-control" />
             </div>
-            <div class="col-6 col-md-3 col-lg-3 d-flex flex-column text-start">
+            <div class="col-12 col-md-3  d-flex flex-column text-start">
               <label for="state" class="form-label"
                 ><strong> State </strong></label
               >
@@ -121,7 +121,7 @@
             </div>
 
             <!-------- Codigo postal---------->
-            <div class="col-6 col-md-3  d-flex flex-column text-start">
+            <div class="col-12 col-md-3  d-flex flex-column text-start">
               <label for="postalcode"  class="form-label"
                 ><strong>Postal Code</strong></label
               >
@@ -129,10 +129,10 @@
             </div>
 
             <!-------- Pay Method---------->
-            <div class="col-6  text-start">
+            <div class="col-12 col-md-6  text-start">
                 <strong>We accept:</strong>
-
-                <div class="col-7 bg-secondary p-2 mt-2 border justify-content-between rounded d-flex flex-wrap">
+              <div class="row">
+                <div class="col-12 col-md-8 bg-secondary p-2 mt-2 border justify-content-between rounded d-flex flex-wrap">
                   <!---Mastercard---->
                   <div class="form-check form-check-inline ">
                     <input
@@ -197,10 +197,10 @@
                   </div>
 
                 </div>
-
+              </div>
             </div>
             <!-------- Mensaje ---------->
-            <div class="col-12 col-md-6 d-flex flex-column text-start">
+            <div class="col-12 col-md-4 d-flex flex-column text-start">
               <label for="Message" class="form-label"
                 ><strong>Message</strong>
               </label>
